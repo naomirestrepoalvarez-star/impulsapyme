@@ -1,0 +1,1879 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Impulsapyme | Publicidad, Gestión de Redes Sociales y Estrategia para PyMEs</title>
+  <meta name="description" content="Impulsapyme: Agencia de publicidad y marketing estratégico para pequeñas y medianas empresas. Creación de contenido, diseño de piezas publicitarias, pauta digital y crecimiento de marcas.">
+  <meta name="keywords" content="publicidad, marketing pymes, gestion de redes sociales, piezas publicitarias, anuncios, impulsapyme">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/logo/logo.png">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              primary: '#1b382b',
+              dark: '#12251d',
+              sage: '#8fa89b',
+              lightSage: '#e8efe9',
+              cream: '#FAF8F5',
+              sand: '#F3EFE6',
+              accent: '#e07a5f',
+              muted: '#56695f'
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            handwritten: ['"Caveat"', 'cursive']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-[#FAF8F5] text-[#17261f] antialiased selection:bg-[#8fa89b] selection:text-white">
+
+  <!-- ======================================================================
+       1. TOP BAR / HORARIO Y CANALES RÁPIDOS
+       ====================================================================== -->
+  <div class="bg-[#1b382b] text-[#e8efe9] text-xs py-2 px-4 border-b border-[#28543f]">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+      <!-- Horario en vivo -->
+      <div class="flex items-center gap-2">
+        <span id="live-status-badge" class="w-2.5 h-2.5 rounded-full bg-emerald-400 live-indicator"></span>
+        <span class="font-medium text-stone-200">Horario de Atención:</span>
+        <span class="text-white font-semibold">Lun - Vie: 8:00 AM - 7:00 PM | Sáb: 9:00 AM - 2:00 PM</span>
+        <span class="hidden md:inline-block px-2 py-0.5 rounded-full bg-emerald-900/80 text-[10px] text-emerald-300 font-bold ml-1">
+          WhatsApp 24/7
+        </span>
+      </div>
+
+      <!-- Canales Rápidos -->
+      <div class="flex items-center gap-4">
+        <a href="https://wa.me/57312458911" target="_blank" rel="noopener noreferrer" class="hover:text-white flex items-center gap-1 transition-colors">
+          <i data-lucide="phone" class="w-3.5 h-3.5"></i>
+          <span>312 458 911</span>
+        </a>
+        <a href="https://instagram.com/Impulsapyme-N" target="_blank" rel="noopener noreferrer" class="hover:text-white flex items-center gap-1 transition-colors">
+          <i data-lucide="instagram" class="w-3.5 h-3.5"></i>
+          <span>@Impulsapyme-N</span>
+        </a>
+        <a href="mailto:naomirestrepoalvrez@gmail.com" class="hidden sm:flex hover:text-white items-center gap-1 transition-colors">
+          <i data-lucide="mail" class="w-3.5 h-3.5"></i>
+          <span>naomirestrepoalvrez@gmail.com</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       2. HEADER & NAVEGACIÓN PRINCIPAL
+       ====================================================================== -->
+  <header class="sticky top-0 z-40 glass-nav border-b border-stone-200/70 transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Logo Brand -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="relative w-12 h-12 rounded-full overflow-hidden border-2 border-[#1b382b] bg-white shadow-sm flex items-center justify-center p-0.5 group-hover:scale-105 transition-transform">
+          <img src="assets/logo/logo.png" alt="Logo Impulsapyme" class="w-full h-full object-contain">
+        </div>
+        <div>
+          <span class="font-serif text-2xl font-bold tracking-tight text-[#1b382b] block leading-none">
+            IMPULSAPYME
+          </span>
+          <span class="text-[11px] font-medium uppercase tracking-wider text-stone-500 block mt-0.5">
+            Publicidad & Redes Sociales
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="hidden lg:flex items-center gap-7 text-sm font-semibold text-stone-700">
+        <a href="#que-es-agencia" class="hover:text-[#1b382b] transition-colors py-1">¿Para qué una Agencia?</a>
+        <a href="#metodologia" class="hover:text-[#1b382b] transition-colors py-1">Metodología</a>
+        <a href="#galeria" class="hover:text-[#1b382b] transition-colors py-1">Piezas Publicitarias</a>
+        <a href="#planes" class="hover:text-[#1b382b] transition-colors py-1">Planes y Precios</a>
+        <a href="#horarios" class="hover:text-[#1b382b] transition-colors py-1">Horarios</a>
+        <a href="#contacto" class="hover:text-[#1b382b] transition-colors py-1">Contacto</a>
+      </nav>
+
+      <!-- Header CTAs -->
+      <div class="hidden sm:flex items-center gap-3">
+        <a href="#cotizador" class="px-4 py-2.5 rounded-full text-xs font-bold text-[#1b382b] border border-[#1b382b]/30 hover:bg-[#1b382b]/5 transition-all">
+          Cotizador $20 - $40k
+        </a>
+        <a href="https://wa.me/57312458911?text=Hola%20Impulsapyme,%20quiero%20impulsar%20mi%20negocio%20con%20sus%20servicios%20de%20publicidad." 
+           target="_blank" 
+           rel="noopener noreferrer"
+           class="px-5 py-2.5 rounded-full text-xs font-bold text-white bg-[#1b382b] hover:bg-[#28543f] shadow-md hover:shadow-lg transition-all flex items-center gap-2 group">
+          <span>Impulsar mi PyME</span>
+          <i data-lucide="arrow-right" class="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform"></i>
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-xl text-stone-700 hover:text-[#1b382b] hover:bg-stone-100 transition-colors" aria-label="Abrir menú">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div id="mobile-menu" class="hidden fixed inset-0 z-50 bg-stone-900/60 backdrop-blur-sm lg:hidden">
+    <div class="fixed right-0 top-0 bottom-0 w-5/6 max-w-sm bg-[#FAF8F5] p-6 shadow-2xl flex flex-col justify-between overflow-y-auto">
+      <div>
+        <div class="flex items-center justify-between pb-4 border-b border-stone-200">
+          <div class="flex items-center gap-2">
+            <img src="assets/logo/logo.png" alt="Logo Impulsapyme" class="w-10 h-10 object-contain">
+            <span class="font-serif font-bold text-lg text-[#1b382b]">IMPULSAPYME</span>
+          </div>
+          <button id="mobile-menu-close" class="p-2 text-stone-500 hover:text-stone-900 rounded-lg">
+            <i data-lucide="x" class="w-6 h-6"></i>
+          </button>
+        </div>
+
+        <nav class="mt-6 flex flex-col gap-3 font-semibold text-stone-800 text-base">
+          <a href="#que-es-agencia" class="mobile-nav-link py-2 px-3 rounded-lg hover:bg-stone-100">¿Para qué una Agencia?</a>
+          <a href="#metodologia" class="mobile-nav-link py-2 px-3 rounded-lg hover:bg-stone-100">Metodología en 5 Pasos</a>
+          <a href="#galeria" class="mobile-nav-link py-2 px-3 rounded-lg hover:bg-stone-100">Galería de Piezas</a>
+          <a href="#planes" class="mobile-nav-link py-2 px-3 rounded-lg hover:bg-stone-100">Planes y Precios</a>
+          <a href="#cotizador" class="mobile-nav-link py-2 px-3 rounded-lg hover:bg-stone-100">Calculadora de Presupuesto</a>
+          <a href="#horarios" class="mobile-nav-link py-2 px-3 rounded-lg hover:bg-stone-100">Horarios de Atención</a>
+          <a href="#contacto" class="mobile-nav-link py-2 px-3 rounded-lg hover:bg-stone-100">Contacto</a>
+        </nav>
+      </div>
+
+      <div class="pt-6 border-t border-stone-200 flex flex-col gap-3">
+        <a href="https://wa.me/57312458911" target="_blank" class="w-full py-3 bg-[#1b382b] text-white text-center rounded-xl font-bold text-sm shadow">
+          Escribir por WhatsApp
+        </a>
+        <p class="text-xs text-center text-stone-500">
+          Lun - Vie 8:00 AM a 7:00 PM | Sáb 9:00 AM a 2:00 PM
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- ======================================================================
+         3. HERO SECTION CON EL BANNER OFICIAL
+         ====================================================================== -->
+    <section class="relative pt-6 pb-14 md:py-16 overflow-hidden">
+      <!-- Ambient background blur shapes -->
+      <div class="absolute -top-24 -left-24 w-96 h-96 bg-[#8fa89b]/15 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="absolute top-1/2 -right-24 w-96 h-96 bg-[#1b382b]/10 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Header Text Intro -->
+        <div class="text-center max-w-3xl mx-auto mb-8">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#e8efe9] border border-[#8fa89b]/40 text-[#1b382b] text-xs font-bold tracking-wide uppercase mb-4">
+            <i data-lucide="sparkles" class="w-3.5 h-3.5 text-[#1b382b]"></i>
+            <span>Agencia Publicitaria & Crecimiento Digital</span>
+          </div>
+          <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-[#1b382b] tracking-tight leading-[1.15]">
+            Tu pequeña empresa también merece <span class="italic font-serif underline decoration-[#8fa89b] decoration-wavy decoration-2">grandes historias</span>.
+          </h1>
+          <p class="mt-4 text-base sm:text-lg text-stone-600 max-w-2xl mx-auto leading-relaxed">
+            Estrategias de marketing y publicidad que hacen crecer lo que tanto te ha costado construir. Conectamos tu marca con clientes reales.
+          </p>
+        </div>
+
+        <!-- Banner Container Showcase (Requirement 1) -->
+        <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-white group">
+          <div class="relative w-full aspect-[2048/768] overflow-hidden bg-stone-100">
+            <img 
+              src="assets/banner/banner.png" 
+              alt="Impulsapyme - Tu pequeña empresa también merece grandes historias" 
+              class="w-full h-full object-cover object-center group-hover:scale-[1.01] transition-transform duration-700"
+            />
+          </div>
+
+          <!-- Banner Bottom Value Bar -->
+          <div class="grid grid-cols-1 md:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-stone-100 bg-white p-4 sm:p-6 text-stone-800">
+            <div class="flex items-center gap-3 p-3">
+              <div class="w-12 h-12 rounded-2xl bg-[#e8efe9] flex items-center justify-center shrink-0 text-[#1b382b]">
+                <i data-lucide="megaphone" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-sm text-[#1b382b]">Más Visibilidad</h4>
+                <p class="text-xs text-stone-500">Destaca frente a tu competencia en redes.</p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3 p-3">
+              <div class="w-12 h-12 rounded-2xl bg-[#e8efe9] flex items-center justify-center shrink-0 text-[#1b382b]">
+                <i data-lucide="users" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-sm text-[#1b382b]">Conecta con tu Audiencia</h4>
+                <p class="text-xs text-stone-500">Contenido auténtico que genera confianza.</p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3 p-3">
+              <div class="w-12 h-12 rounded-2xl bg-[#e8efe9] flex items-center justify-center shrink-0 text-[#1b382b]">
+                <i data-lucide="trending-up" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-sm text-[#1b382b]">Haz Crecer tu Negocio</h4>
+                <p class="text-xs text-stone-500">Campañas con enfoque directo en ventas.</p>
+              </div>
+            </div>
+
+            <div class="flex items-center justify-center md:justify-start gap-3 p-3 bg-[#FAF8F5] md:bg-transparent rounded-xl">
+              <div>
+                <span class="font-handwritten text-2xl text-[#1b382b] font-bold block leading-tight">
+                  Juntos lo hacemos posible ♡
+                </span>
+                <span class="text-[11px] text-stone-500 block">Acompañamiento 1 a 1 para tu PyME</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick CTAs below hero -->
+        <div class="mt-8 flex flex-wrap items-center justify-center gap-4">
+          <a href="#planes" class="px-7 py-3.5 rounded-full bg-[#1b382b] text-white font-bold text-sm hover:bg-[#28543f] shadow-lg hover:shadow-xl transition-all flex items-center gap-2">
+            <span>Ver Planes desde $20.00</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+          <a href="#galeria" class="px-7 py-3.5 rounded-full bg-white text-stone-800 border border-stone-300 font-bold text-sm hover:bg-stone-50 shadow-sm transition-all flex items-center gap-2">
+            <i data-lucide="image" class="w-4 h-4 text-[#1b382b]"></i>
+            <span>Ver Piezas Publicitarias</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         4. FRASES QUE MOTIVAN A IMPULSAR TU NEGOCIO (Ticker / Citas)
+         ====================================================================== -->
+    <section class="py-6 bg-[#1b382b] text-white overflow-hidden shadow-inner">
+      <div class="flex items-center mb-2 px-4 max-w-7xl mx-auto">
+        <span class="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-[#8fa89b]">
+          <i data-lucide="quote" class="w-3.5 h-3.5"></i>
+          Frases para motivar tu impulso empresarial
+        </span>
+      </div>
+
+      <div class="relative w-full overflow-hidden whitespace-nowrap">
+        <div class="animate-marquee flex items-center gap-12 py-2">
+          
+          <div class="inline-flex items-center gap-3 text-sm md:text-base font-medium">
+            <span class="w-2 h-2 rounded-full bg-[#8fa89b]"></span>
+            <span>«Tu pequeña empresa también merece grandes historias.»</span>
+          </div>
+
+          <div class="inline-flex items-center gap-3 text-sm md:text-base font-medium">
+            <span class="w-2 h-2 rounded-full bg-[#8fa89b]"></span>
+            <span>«Una marca sin publicidad es invisible; haz que sea imposible no elegirte.»</span>
+          </div>
+
+          <div class="inline-flex items-center gap-3 text-sm md:text-base font-medium">
+            <span class="w-2 h-2 rounded-full bg-[#8fa89b]"></span>
+            <span>«No compitas por precio cuando la calidad de tu contenido puede demostrar tu verdadero valor.»</span>
+          </div>
+
+          <div class="inline-flex items-center gap-3 text-sm md:text-base font-medium">
+            <span class="w-2 h-2 rounded-full bg-[#8fa89b]"></span>
+            <span>«El mejor momento para hacer despegar tu marca fue cuando abriste tu negocio; el segundo mejor momento es hoy.»</span>
+          </div>
+
+          <div class="inline-flex items-center gap-3 text-sm md:text-base font-medium">
+            <span class="w-2 h-2 rounded-full bg-[#8fa89b]"></span>
+            <span>«Invertir en publicidad no es un gasto, es el motor que transforma tus sueños en ventas reales.»</span>
+          </div>
+
+          <div class="inline-flex items-center gap-3 text-sm md:text-base font-medium">
+            <span class="w-2 h-2 rounded-full bg-[#8fa89b]"></span>
+            <span>«Según mis cálculos... necesitas meterle al contenido. ¡Juntos lo hacemos posible!»</span>
+          </div>
+
+          <!-- Duplicado para loop continuo -->
+          <div class="inline-flex items-center gap-3 text-sm md:text-base font-medium">
+            <span class="w-2 h-2 rounded-full bg-[#8fa89b]"></span>
+            <span>«Tu pequeña empresa también merece grandes historias.»</span>
+          </div>
+
+          <div class="inline-flex items-center gap-3 text-sm md:text-base font-medium">
+            <span class="w-2 h-2 rounded-full bg-[#8fa89b]"></span>
+            <span>«Una marca sin publicidad es invisible; haz que sea imposible no elegirte.»</span>
+          </div>
+
+          <div class="inline-flex items-center gap-3 text-sm md:text-base font-medium">
+            <span class="w-2 h-2 rounded-full bg-[#8fa89b]"></span>
+            <span>«No compitas por precio cuando la calidad de tu contenido puede demostrar tu verdadero valor.»</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         5. SECCIÓN EDUCATIVA: ¿PARA QUÉ SIRVE UNA AGENCIA PUBLICITARIA? (Req 7)
+         ====================================================================== -->
+    <section id="que-es-agencia" class="py-20 bg-white border-b border-stone-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <!-- Left Text Column -->
+          <div class="lg:col-span-5">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#e8efe9] text-[#1b382b] text-xs font-bold tracking-wide uppercase mb-3">
+              <i data-lucide="help-circle" class="w-3.5 h-3.5"></i>
+              <span>Guía para Emprendedores</span>
+            </div>
+            
+            <h2 class="text-3xl sm:text-4xl font-serif font-bold text-[#1b382b] leading-tight">
+              ¿Para qué sirve realmente una <span class="italic">agencia publicitaria</span>?
+            </h2>
+
+            <p class="mt-4 text-stone-600 text-base leading-relaxed">
+              Muchos dueños de negocios creen que una agencia publicitaria es únicamente para «publicar fotos en redes sociales». 
+              La realidad es mucho más poderosa: <strong>una agencia es tu socio estratégico para transformar la atención del público en ventas reales y sostenibles.</strong>
+            </p>
+
+            <div class="mt-6 p-4 rounded-2xl bg-[#FAF8F5] border border-stone-200">
+              <div class="flex items-start gap-3">
+                <div class="w-10 h-10 rounded-xl bg-[#1b382b] text-white flex items-center justify-center shrink-0 mt-0.5">
+                  <i data-lucide="lightbulb" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-sm text-[#1b382b]">El Secreto del Éxito Comercial</h4>
+                  <p class="text-xs text-stone-600 mt-1">
+                    Puedes tener el mejor producto o servicio de tu ciudad, pero si las personas adecuadas no saben que existes, no te van a comprar. La publicidad construye ese puente directo hacia tus clientes.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Callout Quote Card -->
+            <div class="mt-6 border-l-4 border-[#8fa89b] pl-4 py-2">
+              <p class="font-serif italic text-stone-700 text-sm">
+                «Hacer negocios sin publicidad es como guiñarle el ojo a alguien en la oscuridad: tú sabes lo que estás haciendo, pero nadie más se da cuenta.»
+              </p>
+              <span class="text-xs font-bold text-[#1b382b] block mt-1">— Principio Clásico del Marketing</span>
+            </div>
+
+            <div class="mt-8">
+              <a href="#contacto" class="inline-flex items-center gap-2 font-bold text-sm text-[#1b382b] hover:text-[#28543f] underline decoration-[#8fa89b] decoration-2 underline-offset-4">
+                <span>Solicita un diagnóstico gratuito de tu marca</span>
+                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Right Grid Pillars Column -->
+          <div class="lg:col-span-7">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              
+              <!-- Card 1 -->
+              <div class="p-6 rounded-2xl bg-[#FAF8F5] border border-stone-200 hover:border-[#8fa89b] hover:shadow-md transition-all">
+                <div class="w-10 h-10 rounded-xl bg-white shadow-sm border border-stone-200 flex items-center justify-center text-[#1b382b] mb-4">
+                  <i data-lucide="target" class="w-5 h-5"></i>
+                </div>
+                <h3 class="font-bold text-base text-[#1b382b]">1. Atracción de Clientes Reales</h3>
+                <p class="text-xs text-stone-600 mt-2 leading-relaxed">
+                  No buscamos solo "likes". Diseñamos campañas segmentadas que llegan exactamente a las personas que tienen la necesidad y el dinero para comprar lo que ofreces.
+                </p>
+              </div>
+
+              <!-- Card 2 -->
+              <div class="p-6 rounded-2xl bg-[#FAF8F5] border border-stone-200 hover:border-[#8fa89b] hover:shadow-md transition-all">
+                <div class="w-10 h-10 rounded-xl bg-white shadow-sm border border-stone-200 flex items-center justify-center text-[#1b382b] mb-4">
+                  <i data-lucide="sparkles" class="w-5 h-5"></i>
+                </div>
+                <h3 class="font-bold text-base text-[#1b382b]">2. Diferenciación y Prestigio</h3>
+                <p class="text-xs text-stone-600 mt-2 leading-relaxed">
+                  En un mercado saturado, el diseño profesional y la voz de marca comunican seriedad, confianza y calidad. Tu negocio deja de parecer improvisado.
+                </p>
+              </div>
+
+              <!-- Card 3 -->
+              <div class="p-6 rounded-2xl bg-[#FAF8F5] border border-stone-200 hover:border-[#8fa89b] hover:shadow-md transition-all">
+                <div class="w-10 h-10 rounded-xl bg-white shadow-sm border border-stone-200 flex items-center justify-center text-[#1b382b] mb-4">
+                  <i data-lucide="clock" class="w-5 h-5"></i>
+                </div>
+                <h3 class="font-bold text-base text-[#1b382b]">3. Ahorro de Tiempo Crítico</h3>
+                <p class="text-xs text-stone-600 mt-2 leading-relaxed">
+                  Como dueño de negocio, tu tiempo vale oro. Mientras nosotros gestionamos tus campañas y contenidos, tú te enfocas en operar, atender y facturar.
+                </p>
+              </div>
+
+              <!-- Card 4 -->
+              <div class="p-6 rounded-2xl bg-[#FAF8F5] border border-stone-200 hover:border-[#8fa89b] hover:shadow-md transition-all">
+                <div class="w-10 h-10 rounded-xl bg-white shadow-sm border border-stone-200 flex items-center justify-center text-[#1b382b] mb-4">
+                  <i data-lucide="dollar-sign" class="w-5 h-5"></i>
+                </div>
+                <h3 class="font-bold text-base text-[#1b382b]">4. Rentabilidad del Presupuesto (ROI)</h3>
+                <p class="text-xs text-stone-600 mt-2 leading-relaxed">
+                  Publicitar sin estrategia es quemar dinero en anuncios que nadie ve. Optimizamos cada centavo para que cada dólar invertido regrese con ganancias.
+                </p>
+              </div>
+
+              <!-- Card 5 -->
+              <div class="p-6 rounded-2xl bg-[#FAF8F5] border border-stone-200 hover:border-[#8fa89b] hover:shadow-md transition-all">
+                <div class="w-10 h-10 rounded-xl bg-white shadow-sm border border-stone-200 flex items-center justify-center text-[#1b382b] mb-4">
+                  <i data-lucide="palette" class="w-5 h-5"></i>
+                </div>
+                <h3 class="font-bold text-base text-[#1b382b]">5. Piezas Publicitarias Ganadoras</h3>
+                <p class="text-xs text-stone-600 mt-2 leading-relaxed">
+                  Creamos piezas gráficas, videos y textos persuasivos (copywriting) basados en psicología de compra para detener el scroll del usuario y generar acción.
+                </p>
+              </div>
+
+              <!-- Card 6 -->
+              <div class="p-6 rounded-2xl bg-[#FAF8F5] border border-stone-200 hover:border-[#8fa89b] hover:shadow-md transition-all">
+                <div class="w-10 h-10 rounded-xl bg-white shadow-sm border border-stone-200 flex items-center justify-center text-[#1b382b] mb-4">
+                  <i data-lucide="bar-chart-2" class="w-5 h-5"></i>
+                </div>
+                <h3 class="font-bold text-base text-[#1b382b]">6. Decisiones Basadas en Datos</h3>
+                <p class="text-xs text-stone-600 mt-2 leading-relaxed">
+                  Te entregamos informes transparentes de alcance, impresiones y crecimiento. Sabrás exactamente qué funciona y cómo seguir multiplicando tus resultados.
+                </p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Comparativa Visual: Sin Agencia vs Con Impulsapyme -->
+        <div class="mt-16 bg-[#FAF8F5] rounded-3xl p-6 sm:p-10 border border-stone-200">
+          <div class="text-center max-w-2xl mx-auto mb-8">
+            <h3 class="font-serif text-2xl font-bold text-[#1b382b]">
+              ¿Por qué elegir Impulsapyme para tu negocio?
+            </h3>
+            <p class="text-xs sm:text-sm text-stone-600 mt-2">
+              Una comparación honesta de lo que experimentas al trabajar con nosotros frente a la improvisación.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            
+            <!-- Sin Agencia -->
+            <div class="bg-white rounded-2xl p-6 border border-rose-200 shadow-sm relative">
+              <span class="absolute top-4 right-4 text-xs font-bold px-3 py-1 rounded-full bg-rose-100 text-rose-800">
+                Sin Agencia Publicitaria
+              </span>
+              <h4 class="font-bold text-rose-900 text-lg mb-4 flex items-center gap-2">
+                <i data-lucide="x-circle" class="w-5 h-5 text-rose-600"></i>
+                El camino de la improvisación
+              </h4>
+              <ul class="space-y-3 text-xs sm:text-sm text-stone-600">
+                <li class="flex items-start gap-2">
+                  <span class="text-rose-500 font-bold">✕</span>
+                  <span>Publicas cuando tienes tiempo libre, sin constancia ni calendario.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-rose-500 font-bold">✕</span>
+                  <span>Diseños caseros que no transmiten la verdadera calidad de tu producto.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-rose-500 font-bold">✕</span>
+                  <span>Pagas publicidad con el botón "Promocionar" y pierdes dinero sin ver ventas.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-rose-500 font-bold">✕</span>
+                  <span>Estrés diario por no saber qué publicar ni cómo hablarle a tu audiencia.</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Con Impulsapyme -->
+            <div class="bg-[#1b382b] text-white rounded-2xl p-6 border border-[#28543f] shadow-lg relative">
+              <span class="absolute top-4 right-4 text-xs font-bold px-3 py-1 rounded-full bg-emerald-400 text-[#12251d]">
+                Con Impulsapyme
+              </span>
+              <h4 class="font-bold text-emerald-200 text-lg mb-4 flex items-center gap-2">
+                <i data-lucide="check-circle" class="w-5 h-5 text-emerald-400"></i>
+                Estrategia profesional paso a paso
+              </h4>
+              <ul class="space-y-3 text-xs sm:text-sm text-stone-200">
+                <li class="flex items-start gap-2">
+                  <span class="text-emerald-400 font-bold">✓</span>
+                  <span>Calendario estratégico mensual planificado con objetivos comerciales.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-emerald-400 font-bold">✓</span>
+                  <span>Piezas gráficas y audiovisuales de alto impacto que cautivan y venden.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-emerald-400 font-bold">✓</span>
+                  <span>Campañas en Meta Ads segmentadas a tu público comprador ideal.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-emerald-400 font-bold">✓</span>
+                  <span>Tranquilidad total y más tiempo para atender a tus nuevos clientes.</span>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Showcase Visual con Imágenes de Internet (Requirement 7) -->
+        <div class="mt-16 pt-12 border-t border-stone-200">
+          <div class="text-center max-w-2xl mx-auto mb-10">
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#e8efe9] text-[#1b382b] text-xs font-bold uppercase tracking-wider mb-2">
+              <i data-lucide="eye" class="w-3.5 h-3.5"></i>
+              Ecosistema Visual
+            </span>
+            <h3 class="font-serif text-2xl font-bold text-[#1b382b]">
+              El poder del marketing publicitario en acción
+            </h3>
+            <p class="text-xs sm:text-sm text-stone-600 mt-1">
+              Combinamos creatividad humana, herramientas digitales de vanguardia y análisis en tiempo real para hacer despegar tu PyME.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            
+            <!-- Imagen 1: Estrategia Creativa -->
+            <div class="bg-white rounded-3xl overflow-hidden border border-stone-200 shadow-sm hover:shadow-md transition-shadow group flex flex-col">
+              <div class="relative aspect-video overflow-hidden bg-stone-100">
+                <img 
+                  src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80" 
+                  alt="Estrategia y Creatividad para PyMEs" 
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  loading="lazy"
+                />
+                <span class="absolute top-3 left-3 bg-[#1b382b]/90 backdrop-blur text-white text-[11px] font-bold px-3 py-1 rounded-full">
+                  Estrategia & Ideas
+                </span>
+              </div>
+              <div class="p-5 flex-1 flex flex-col justify-between">
+                <div>
+                  <h4 class="font-bold text-sm text-[#1b382b]">Planificación Estratégica</h4>
+                  <p class="text-xs text-stone-600 mt-2 leading-relaxed">
+                    Identificamos los ángulos emocionales y comerciales que conectan con tu comprador ideal.
+                  </p>
+                </div>
+                <div class="mt-4 pt-3 border-t border-stone-100 flex items-center justify-between text-[11px] font-semibold text-emerald-800">
+                  <span>Enfoque personalizado</span>
+                  <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
+                </div>
+              </div>
+            </div>
+
+            <!-- Imagen 2: Producción & Diseño -->
+            <div class="bg-white rounded-3xl overflow-hidden border border-stone-200 shadow-sm hover:shadow-md transition-shadow group flex flex-col">
+              <div class="relative aspect-video overflow-hidden bg-stone-100">
+                <img 
+                  src="https://images.unsplash.com/photo-1542744094-3a31f272c490?auto=format&fit=crop&w=800&q=80" 
+                  alt="Producción de Piezas Publicitarias y Contenido" 
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  loading="lazy"
+                />
+                <span class="absolute top-3 left-3 bg-[#1b382b]/90 backdrop-blur text-white text-[11px] font-bold px-3 py-1 rounded-full">
+                  Producción Digital
+                </span>
+              </div>
+              <div class="p-5 flex-1 flex flex-col justify-between">
+                <div>
+                  <h4 class="font-bold text-sm text-[#1b382b]">Diseño & Creación de Piezas</h4>
+                  <p class="text-xs text-stone-600 mt-2 leading-relaxed">
+                    Piezas gráficas para feed e historias, guiones para Reels/TikTok y páginas de aterrizaje con alta conversión.
+                  </p>
+                </div>
+                <div class="mt-4 pt-3 border-t border-stone-100 flex items-center justify-between text-[11px] font-semibold text-emerald-800">
+                  <span>Impacto visual garantizado</span>
+                  <i data-lucide="palette" class="w-3.5 h-3.5"></i>
+                </div>
+              </div>
+            </div>
+
+            <!-- Imagen 3: Métricas & Resultados -->
+            <div class="bg-white rounded-3xl overflow-hidden border border-stone-200 shadow-sm hover:shadow-md transition-shadow group flex flex-col">
+              <div class="relative aspect-video overflow-hidden bg-stone-100">
+                <img 
+                  src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" 
+                  alt="Métricas y Crecimiento de Ventas" 
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  loading="lazy"
+                />
+                <span class="absolute top-3 left-3 bg-[#1b382b]/90 backdrop-blur text-white text-[11px] font-bold px-3 py-1 rounded-full">
+                  Retorno de Inversión (ROI)
+                </span>
+              </div>
+              <div class="p-5 flex-1 flex flex-col justify-between">
+                <div>
+                  <h4 class="font-bold text-sm text-[#1b382b]">Analítica & Ventas Medibles</h4>
+                  <p class="text-xs text-stone-600 mt-2 leading-relaxed">
+                    Monitorizamos el costo por cliente adquirido (CAC) y optimizamos continuamente tus anuncios para maximizar tu retorno.
+                  </p>
+                </div>
+                <div class="mt-4 pt-3 border-t border-stone-100 flex items-center justify-between text-[11px] font-semibold text-emerald-800">
+                  <span>Informes del Paso 5</span>
+                  <i data-lucide="trending-up" class="w-3.5 h-3.5"></i>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         6. NUESTRA METODOLOGÍA: LOS 5 PASOS DE IMPULSAPYME
+         ====================================================================== -->
+    <section id="metodologia" class="py-20 bg-[#FAF8F5]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#e8efe9] text-[#1b382b] text-xs font-bold tracking-wide uppercase mb-3">
+            <i data-lucide="git-merge" class="w-3.5 h-3.5"></i>
+            <span>Flujo de Trabajo Probado</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-serif font-bold text-[#1b382b]">
+            Cómo transformamos tu negocio paso a paso
+          </h2>
+          <p class="mt-3 text-stone-600 text-sm sm:text-base">
+            La metodología real que aplicamos en cada proyecto, extraída de nuestras piezas de trabajo.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-4 relative">
+          
+          <!-- Step 1 -->
+          <div class="bg-white p-6 rounded-2xl border border-stone-200 shadow-sm flex flex-col justify-between hover:-translate-y-1 transition-transform">
+            <div>
+              <span class="w-10 h-10 rounded-xl bg-stone-100 text-stone-800 font-serif font-bold text-lg flex items-center justify-center mb-4">
+                01
+              </span>
+              <h3 class="font-bold text-base text-[#1b382b]">Diagnóstico Inicial</h3>
+              <p class="text-xs text-stone-500 mt-2">
+                Analizamos el estado actual de tu negocio, tu competencia y la percepción de tu marca en el mercado.
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-stone-100 text-[11px] font-semibold text-emerald-800">
+              Evaluación 360°
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="bg-white p-6 rounded-2xl border border-stone-200 shadow-sm flex flex-col justify-between hover:-translate-y-1 transition-transform">
+            <div>
+              <span class="w-10 h-10 rounded-xl bg-stone-800 text-white font-serif font-bold text-lg flex items-center justify-center mb-4">
+                02
+              </span>
+              <h3 class="font-bold text-base text-[#1b382b]">Objetivos Claros</h3>
+              <p class="text-xs text-stone-500 mt-2">
+                Definimos las metas prioritarias: aumentar ventas, dar a conocer la empresa y mejorar la presencia digital.
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-stone-100 text-[11px] font-semibold text-emerald-800">
+              Metas cuantificables
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="bg-white p-6 rounded-2xl border border-stone-200 shadow-sm flex flex-col justify-between hover:-translate-y-1 transition-transform">
+            <div>
+              <span class="w-10 h-10 rounded-xl bg-amber-500 text-white font-serif font-bold text-lg flex items-center justify-center mb-4">
+                03
+              </span>
+              <h3 class="font-bold text-base text-[#1b382b]">Plan de Acción</h3>
+              <p class="text-xs text-stone-500 mt-2">
+                Estructuramos el tipo de contenido, los mensajes principales y segmentamos con precisión a tu público objetivo.
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-stone-100 text-[11px] font-semibold text-amber-700">
+              Hoja de ruta clara
+            </div>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="bg-white p-6 rounded-2xl border border-stone-200 shadow-sm flex flex-col justify-between hover:-translate-y-1 transition-transform">
+            <div>
+              <span class="w-10 h-10 rounded-xl bg-purple-600 text-white font-serif font-bold text-lg flex items-center justify-center mb-4">
+                04
+              </span>
+              <h3 class="font-bold text-base text-[#1b382b]">Creación Integral</h3>
+              <p class="text-xs text-stone-500 mt-2">
+                Manos a la obra: diseño de piezas gráficas, videos promocionales, copys, investigación de tendencias y páginas web.
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-stone-100 text-[11px] font-semibold text-purple-700">
+              Producción de valor
+            </div>
+          </div>
+
+          <!-- Step 5 -->
+          <div class="bg-white p-6 rounded-2xl border border-stone-200 shadow-sm flex flex-col justify-between hover:-translate-y-1 transition-transform">
+            <div>
+              <span class="w-10 h-10 rounded-xl bg-blue-700 text-white font-serif font-bold text-lg flex items-center justify-center mb-4">
+                05
+              </span>
+              <h3 class="font-bold text-base text-[#1b382b]">Informes & Métricas</h3>
+              <p class="text-xs text-stone-500 mt-2">
+                Te entregamos reportes de alcances, impresiones, interacciones y el crecimiento real de tu facturación.
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-stone-100 text-[11px] font-semibold text-blue-700">
+              Resultados visibles
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Concept Pill -->
+        <div class="mt-12 text-center">
+          <div class="inline-flex flex-wrap items-center justify-center gap-3 px-6 py-3 rounded-full bg-white shadow-sm border border-stone-200 text-xs sm:text-sm font-semibold text-stone-700">
+            <span class="text-[#1b382b] font-bold">Tu MARCA</span>
+            <span class="text-stone-300">●</span>
+            <span class="text-purple-700 font-bold">Tu CONTENIDO</span>
+            <span class="text-stone-300">●</span>
+            <span class="text-amber-700 font-bold">Tu PRODUCTO</span>
+            <span class="text-stone-400">(Cada uno cumple con un rol distinto para hacer crecer tu PyME)</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         7. GALERÍA DE PIEZAS PUBLICITARIAS (Requirement 3)
+         ====================================================================== -->
+    <section id="galeria" class="py-20 bg-white border-t border-b border-stone-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
+          <div>
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#e8efe9] text-[#1b382b] text-xs font-bold tracking-wide uppercase mb-3">
+              <i data-lucide="layers" class="w-3.5 h-3.5"></i>
+              <span>Portafolio de Trabajo</span>
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-serif font-bold text-[#1b382b]">
+              Galería de Piezas Publicitarias
+            </h2>
+            <p class="mt-2 text-stone-600 text-sm sm:text-base max-w-xl">
+              Explora una selección de nuestras piezas publicitarias reales diseñadas con enfoque en conversión, estética y pedagogía comercial.
+            </p>
+          </div>
+
+          <!-- Filter Buttons -->
+          <div class="flex flex-wrap items-center gap-2">
+            <button class="gallery-filter-btn px-4 py-2 rounded-full text-xs font-bold transition-all bg-[#1b382b] text-white shadow-sm" data-filter="all">
+              Todas las Piezas (7)
+            </button>
+            <button class="gallery-filter-btn px-4 py-2 rounded-full text-xs font-bold transition-all bg-stone-100 text-stone-700 hover:bg-stone-200" data-filter="creatividad">
+              Creatividad & Redes
+            </button>
+            <button class="gallery-filter-btn px-4 py-2 rounded-full text-xs font-bold transition-all bg-stone-100 text-stone-700 hover:bg-stone-200" data-filter="estrategia">
+              Estrategia & Pasos
+            </button>
+            <button class="gallery-filter-btn px-4 py-2 rounded-full text-xs font-bold transition-all bg-stone-100 text-stone-700 hover:bg-stone-200" data-filter="branding">
+              Branding & Producción
+            </button>
+          </div>
+        </div>
+
+        <!-- Gallery Grid (Rendered dynamically via main.js) -->
+        <div id="gallery-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Las tarjetas de las 7 piezas se inyectan automáticamente desde js/main.js -->
+        </div>
+
+        <!-- Gallery CTA Banner -->
+        <div class="mt-14 p-8 rounded-3xl bg-gradient-to-r from-[#1b382b] to-[#28543f] text-white flex flex-col sm:flex-row items-center justify-between gap-6 shadow-xl">
+          <div class="flex items-center gap-4">
+            <div class="w-14 h-14 rounded-2xl bg-white/10 flex items-center justify-center shrink-0 border border-white/20">
+              <i data-lucide="sparkles" class="w-7 h-7 text-emerald-300"></i>
+            </div>
+            <div>
+              <h3 class="font-serif text-xl sm:text-2xl font-bold">¿Quieres piezas publicitarias como estas para tu negocio?</h3>
+              <p class="text-stone-300 text-xs sm:text-sm mt-1">Diseñamos paquetes personalizados desde <strong>$20.00 USD</strong> adaptados a tu sector.</p>
+            </div>
+          </div>
+          <a href="https://wa.me/57312458911?text=Hola%20Impulsapyme,%20estoy%20viendo%20su%20galer%C3%ADa%20de%20piezas%20y%20quiero%20cotizar%20dise%C3%B1os%20para%20mi%20marca." 
+             target="_blank" 
+             class="px-6 py-3 rounded-full bg-white text-[#1b382b] font-bold text-xs uppercase tracking-wider hover:bg-stone-100 shadow transition-all shrink-0">
+            Cotizar Mis Diseños
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         8. PLANES Y PRECIOS TRANSPARENTES ($20.00 - $40,000) (Requirement 6)
+         ====================================================================== -->
+    <section id="planes" class="py-20 bg-[#FAF8F5]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-14">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#e8efe9] text-[#1b382b] text-xs font-bold tracking-wide uppercase mb-3">
+            <i data-lucide="tag" class="w-3.5 h-3.5"></i>
+            <span>Inversión Clara & Escalable</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-serif font-bold text-[#1b382b]">
+            Planes diseñados para cada etapa de tu empresa
+          </h2>
+          <p class="mt-3 text-stone-600 text-sm sm:text-base">
+            Opciones accesibles desde <strong>$20.00 USD</strong> para comenzar de inmediato, hasta planes corporativos integrales de hasta <strong>$40,000 USD</strong> para marcas en plena expansión.
+          </p>
+        </div>
+
+        <!-- Pricing Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
+          
+          <!-- Plan 1: Pieza Express ($20) -->
+          <div class="bg-white rounded-3xl p-6 sm:p-7 border border-stone-200 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow relative">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="text-xs font-bold uppercase tracking-wider text-stone-500 bg-stone-100 px-3 py-1 rounded-full">
+                  Semilla / Test
+                </span>
+                <i data-lucide="feather" class="w-5 h-5 text-stone-400"></i>
+              </div>
+              <h3 class="font-serif text-xl font-bold text-[#1b382b]">Pieza Express</h3>
+              <p class="text-xs text-stone-500 mt-1">Ideal para promociones relámpago o validar nuestro servicio.</p>
+
+              <div class="mt-6 pb-6 border-b border-stone-100">
+                <div class="flex items-baseline gap-1">
+                  <span class="text-3xl sm:text-4xl font-serif font-bold text-[#1b382b]">$20.00</span>
+                  <span class="text-xs text-stone-500 font-medium">USD / por pieza</span>
+                </div>
+                <span class="text-[11px] text-stone-400 block mt-1">Equivalente a ~$20.000 COP inicial</span>
+              </div>
+
+              <ul class="mt-6 space-y-3 text-xs text-stone-600">
+                <li class="flex items-start gap-2">
+                  <i data-lucide="check" class="w-4 h-4 text-emerald-700 shrink-0 mt-0.5"></i>
+                  <span><strong>1 a 2 Piezas publicitarias</strong> de alta resolución (Feed + Story).</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i data-lucide="check" class="w-4 h-4 text-emerald-700 shrink-0 mt-0.5"></i>
+                  <span>Copywriting vendedor con llamada a la acción.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i data-lucide="check" class="w-4 h-4 text-emerald-700 shrink-0 mt-0.5"></i>
+                  <span>Adaptación a la paleta de tu negocio.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i data-lucide="check" class="w-4 h-4 text-emerald-700 shrink-0 mt-0.5"></i>
+                  <span>Entrega rápida en 48 horas hábiles.</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="mt-8">
+              <a href="https://wa.me/57312458911?text=Hola%20Impulsapyme,%20quiero%20solicitar%20el%20Plan%20Pieza%20Express%20de%20$20.00." 
+                 target="_blank" 
+                 class="block w-full py-3 text-center rounded-2xl font-bold text-xs bg-stone-100 hover:bg-stone-200 text-stone-800 transition-colors">
+                Elegir Plan Express
+              </a>
+            </div>
+          </div>
+
+          <!-- Plan 2: Impulso PyME ($75) - RECOMENDADO -->
+          <div class="bg-white rounded-3xl p-6 sm:p-7 border-2 border-[#1b382b] shadow-xl flex flex-col justify-between relative transform lg:-translate-y-2">
+            <span class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-[#1b382b] text-white text-[11px] font-bold px-4 py-1 rounded-full shadow-md tracking-wider uppercase">
+              ★ El Más Elegido
+            </span>
+
+            <div>
+              <div class="flex items-center justify-between mb-4 mt-2">
+                <span class="text-xs font-bold uppercase tracking-wider text-emerald-800 bg-emerald-50 px-3 py-1 rounded-full">
+                  Mensual Activo
+                </span>
+                <i data-lucide="zap" class="w-5 h-5 text-emerald-700"></i>
+              </div>
+              <h3 class="font-serif text-xl font-bold text-[#1b382b]">Impulso PyME</h3>
+              <p class="text-xs text-stone-500 mt-1">Tu presencia profesional y activa en redes durante todo el mes.</p>
+
+              <div class="mt-6 pb-6 border-b border-stone-100">
+                <div class="flex items-baseline gap-1">
+                  <span class="text-3xl sm:text-4xl font-serif font-bold text-[#1b382b]">$75.00</span>
+                  <span class="text-xs text-stone-500 font-medium">USD / mes</span>
+                </div>
+                <span class="text-[11px] text-stone-400 block mt-1">Equivalente a ~$75.000 COP / mes</span>
+              </div>
+
+              <ul class="mt-6 space-y-3 text-xs text-stone-600">
+                <li class="flex items-start gap-2">
+                  <i data-lucide="check" class="w-4 h-4 text-emerald-700 shrink-0 mt-0.5"></i>
+                  <span><strong>8 a 10 Piezas publicitarias</strong> estratégicas al mes.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i data-lucide="check" class="w-4 h-4 text-emerald-700 shrink-0 mt-0.5"></i>
+                  <span>Calendario mensual planificado de publicaciones.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i data-lucide="check" class="w-4 h-4 text-emerald-700 shrink-0 mt-0.5"></i>
+                  <span>Optimización de Biografía de Instagram y WhatsApp.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i data-lucide="check" class="w-4 h-4 text-emerald-700 shrink-0 mt-0.5"></i>
+                  <span>2 Guiones para Reels o historias interactivas.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i data-lucide="check" class="w-4 h-4 text-emerald-700 shrink-0 mt-0.5"></i>
+                  <span>Soporte prioritario 1 a 1 vía WhatsApp.</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="mt-8">
+              <a href="https://wa.me/57312458911?text=Hola%20Impulsapyme,%20quiero%20el%20Plan%20Impulso%20PyME%20de%20$75.00." 
+                 target="_blank" 
+                 class="block w-full py-3.5 text-center rounded-2xl font-bold text-xs bg-[#1b382b] hover:bg-[#28543f] text-white shadow-md hover:shadow-lg transition-all">
+                Impulsar mi Negocio Ahora
+              </a>
+            </div>
+          </div>
+
+          <!-- Plan 3: Crecimiento & Ads ($220) -->
+          <div class="bg-white rounded-3xl p-6 sm:p-7 border border-stone-200 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow relative">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="text-xs font-bold uppercase tracking-wider text-blue-800 bg-blue-50 px-3 py-1 rounded-full">
+                  Pauta & Ventas
+                </span>
+                <i data-lucide="trending-up" class="w-5 h-5 text-blue-600"></i>
+              </div>
+              <h3 class="font-serif text-xl font-bold text-[#1b382b]">Crecimiento & Ads</h3>
+              <p class="text-xs text-stone-500 mt-1">Contenido orgánico + Campañas pagadas en Meta Ads para vender.</p>
+
+              <div class="mt-6 pb-6 border-b border-stone-100">
+                <div class="flex items-baseline gap-1">
+                  <span class="text-3xl sm:text-4xl font-serif font-bold text-[#1b382b]">$220.00</span>
+                  <span class="text-xs text-stone-500 font-medium">USD / mes</span>
+                </div>
+                <span class="text-[11px] text-stone-400 block mt-1">Diseñado para multiplicar prospectos</span>
+              </div>
+
+              <ul class="mt-6 space-y-3 text-xs text-stone-600">
+                <li class="flex items-start gap-2">
+                  <i data-lucide="check" class="w-4 h-4 text-emerald-700 shrink-0 mt-0.5"></i>
+                  <span><strong>16 Piezas gráficas profesionales</strong> mensuales.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i data-lucide="check" class="w-4 h-4 text-emerald-700 shrink-0 mt-0.5"></i>
+                  <span>Configuración de campañas en <strong>Meta Ads</strong>.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i data-lucide="check" class="w-4 h-4 text-emerald-700 shrink-0 mt-0.5"></i>
+                  <span>Segmentación de público comprador local/nacional.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i data-lucide="check" class="w-4 h-4 text-emerald-700 shrink-0 mt-0.5"></i>
+                  <span>4 Guiones estructurados para Reels y TikTok.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i data-lucide="check" class="w-4 h-4 text-emerald-700 shrink-0 mt-0.5"></i>
+                  <span><strong>Informe mensual de métricas</strong> (Paso 5).</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="mt-8">
+              <a href="https://wa.me/57312458911?text=Hola%20Impulsapyme,%20quiero%20el%20Plan%20Crecimiento%20&%20Ads%20de%20$220.00." 
+                 target="_blank" 
+                 class="block w-full py-3 text-center rounded-2xl font-bold text-xs bg-stone-100 hover:bg-stone-200 text-stone-800 transition-colors">
+                Elegir Crecimiento & Ads
+              </a>
+            </div>
+          </div>
+
+          <!-- Plan 4: Corporativo 360° (Hasta $40.000) -->
+          <div class="bg-gradient-to-b from-[#12251d] to-[#1b382b] text-white rounded-3xl p-6 sm:p-7 shadow-lg flex flex-col justify-between relative">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="text-xs font-bold uppercase tracking-wider text-amber-300 bg-amber-400/20 px-3 py-1 rounded-full">
+                  Alta Escala
+                </span>
+                <i data-lucide="crown" class="w-5 h-5 text-amber-300"></i>
+              </div>
+              <h3 class="font-serif text-xl font-bold text-white">Corporativo 360°</h3>
+              <p class="text-xs text-stone-300 mt-1">Estrategia integral a gran escala, web, pauta masiva y branding.</p>
+
+              <div class="mt-6 pb-6 border-b border-white/10">
+                <div class="flex items-baseline gap-1">
+                  <span class="text-2xl sm:text-3xl font-serif font-bold text-white">Hasta $40,000</span>
+                  <span class="text-xs text-stone-300 font-medium">USD</span>
+                </div>
+                <span class="text-[11px] text-stone-400 block mt-1">Planes a medida desde $1,000 a $40k</span>
+              </div>
+
+              <ul class="mt-6 space-y-3 text-xs text-stone-200">
+                <li class="flex items-start gap-2">
+                  <i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
+                  <span>Estrategia 360° omnicanal a nivel nacional e internacional.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
+                  <span>Desarrollo de sitio web corporativo o eCommerce.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
+                  <span>Producción audiovisual publicitaria de alto nivel.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
+                  <span>Gestión de pauta multicanal de gran presupuesto.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
+                  <span>Director de cuenta dedicado y consultoría estratégica continua.</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="mt-8">
+              <a href="https://wa.me/57312458911?text=Hola%20Impulsapyme,%20quiero%20cotizar%20un%20Plan%20Corporativo%20360%C2%B0%20a%20medida." 
+                 target="_blank" 
+                 class="block w-full py-3 text-center rounded-2xl font-bold text-xs bg-amber-400 hover:bg-amber-300 text-stone-900 shadow transition-colors">
+                Cotizar Solución a Medida
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- ==================================================================
+             CALCULADORA / COTIZADOR DINÁMICO ($20.00 - $40,000)
+             ================================================================== -->
+        <div id="cotizador" class="mt-16 bg-white rounded-3xl p-6 sm:p-10 border border-stone-200 shadow-md">
+          <div class="max-w-3xl mx-auto">
+            
+            <div class="text-center mb-8">
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#e8efe9] text-[#1b382b] text-xs font-bold uppercase tracking-wider mb-2">
+                <i data-lucide="sliders" class="w-3.5 h-3.5"></i>
+                Cotizador Interactivo
+              </span>
+              <h3 class="font-serif text-2xl sm:text-3xl font-bold text-[#1b382b]">
+                Calcula qué puedes lograr con tu presupuesto
+              </h3>
+              <p class="text-xs sm:text-sm text-stone-600 mt-1">
+                Desliza la barra para ver el alcance publicitario recomendado desde <strong>$20.00</strong> hasta <strong>$40,000 USD</strong>.
+              </p>
+            </div>
+
+            <!-- Slider Control -->
+            <div class="space-y-4">
+              <div class="flex items-center justify-between text-xs font-bold text-stone-500">
+                <span>Mínimo: $20.00 USD</span>
+                <span class="text-emerald-800 font-bold text-sm bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200">
+                  Mueve el control para ajustar
+                </span>
+                <span>Máximo: $40,000 USD</span>
+              </div>
+
+              <input 
+                type="range" 
+                id="budget-slider" 
+                min="0" 
+                max="100" 
+                value="25" 
+                class="w-full cursor-pointer"
+              />
+            </div>
+
+            <!-- Result Box -->
+            <div class="mt-8 p-6 sm:p-8 rounded-2xl bg-[#FAF8F5] border border-stone-200">
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b border-stone-200">
+                <div>
+                  <span id="budget-plan-tag" class="text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-emerald-100 text-emerald-900 inline-block mb-2">
+                    Más Recomendado
+                  </span>
+                  <h4 id="budget-plan-title" class="font-serif text-2xl font-bold text-[#1b382b]">
+                    Impulso PyME Mensual
+                  </h4>
+                  <p id="budget-plan-desc" class="text-xs sm:text-sm text-stone-600 mt-1">
+                    La dosis ideal de contenido mensual para mantener tu negocio visible, activo y profesional.
+                  </p>
+                </div>
+
+                <div class="sm:text-right shrink-0">
+                  <span class="text-xs text-stone-500 block">Presupuesto Sugerido:</span>
+                  <span id="budget-amount" class="text-3xl sm:text-4xl font-serif font-bold text-[#1b382b] block">
+                    $75.00 USD
+                  </span>
+                </div>
+              </div>
+
+              <!-- Feature List for current selection -->
+              <div class="mt-6">
+                <h5 class="text-xs font-bold uppercase tracking-wider text-stone-500 mb-3">
+                  Entregables y beneficios incluidos con este presupuesto:
+                </h5>
+                <ul id="budget-features-list" class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  <!-- Populated via JS -->
+                </ul>
+              </div>
+
+              <!-- Button CTA -->
+              <div class="mt-8 pt-6 border-t border-stone-200 flex flex-col sm:flex-row items-center justify-between gap-4">
+                <div class="text-xs text-stone-500">
+                  ¿Tienes requerimientos especiales? Lo ajustamos exactamente a tu medida.
+                </div>
+                <a id="budget-whatsapp-btn" 
+                   href="#" 
+                   target="_blank" 
+                   class="w-full sm:w-auto px-6 py-3 rounded-xl bg-[#1b382b] hover:bg-[#28543f] text-white font-bold text-xs uppercase tracking-wider shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2">
+                  <i data-lucide="message-circle" class="w-4 h-4"></i>
+                  <span>Cotizar este presupuesto por WhatsApp</span>
+                </a>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         TESTIMONIOS Y CASOS DE ÉXITO DE CLIENTES
+         ====================================================================== -->
+    <section class="py-20 bg-stone-50 border-t border-stone-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-2xl mx-auto mb-14">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#e8efe9] text-[#1b382b] text-xs font-bold tracking-wide uppercase mb-3">
+            <i data-lucide="star" class="w-3.5 h-3.5 text-amber-500 fill-current"></i>
+            <span>Testimonios Reales</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-serif font-bold text-[#1b382b]">
+            Emprendedores que ya impulsaron su marca
+          </h2>
+          <p class="mt-2 text-stone-600 text-sm">
+            Descubre cómo pequeñas empresas multiplicaron su visibilidad y sus ventas trabajando con Impulsapyme.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          
+          <!-- Testimonio 1 -->
+          <div class="bg-white p-6 sm:p-7 rounded-3xl border border-stone-200 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+            <div>
+              <div class="flex items-center gap-1 text-amber-400 mb-4">
+                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              </div>
+              <p class="text-xs sm:text-sm text-stone-700 italic leading-relaxed">
+                «Empecé con el plan express de $20 para probar. La pieza publicitaria tuvo tanto enganche en Instagram que en la misma semana pasé al Plan Impulso mensual. Naomi y su equipo entienden el lenguaje de las PyMEs como nadie.»
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-stone-100 flex items-center gap-3">
+              <img 
+                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" 
+                alt="Valentina Gómez" 
+                class="w-11 h-11 rounded-full object-cover border-2 border-emerald-100 shadow-sm"
+                loading="lazy"
+              />
+              <div>
+                <h4 class="font-bold text-xs text-[#1b382b]">Valentina Gómez</h4>
+                <span class="text-[11px] text-stone-500 block">Fundadora de "Boutique Aurora"</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonio 2 -->
+          <div class="bg-white p-6 sm:p-7 rounded-3xl border border-stone-200 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+            <div>
+              <div class="flex items-center gap-1 text-amber-400 mb-4">
+                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              </div>
+              <p class="text-xs sm:text-sm text-stone-700 italic leading-relaxed">
+                «Antes pasaba horas improvisando posts feos que nadie comentaba. Con el calendario y las piezas de Impulsapyme, las consultas por WhatsApp se triplicaron. El horario de atención siempre impecable y cumplido.»
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-stone-100 flex items-center gap-3">
+              <img 
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" 
+                alt="Mateo Morales" 
+                class="w-11 h-11 rounded-full object-cover border-2 border-emerald-100 shadow-sm"
+                loading="lazy"
+              />
+              <div>
+                <h4 class="font-bold text-xs text-[#1b382b]">Mateo Morales</h4>
+                <span class="text-[11px] text-stone-500 block">Propietario de "Café Origen Nativo"</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonio 3 -->
+          <div class="bg-white p-6 sm:p-7 rounded-3xl border border-stone-200 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+            <div>
+              <div class="flex items-center gap-1 text-amber-400 mb-4">
+                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              </div>
+              <p class="text-xs sm:text-sm text-stone-700 italic leading-relaxed">
+                «Los informes del Paso 5 me permitieron ver exactamente de dónde venían los pacientes para mi consultorio. Cada peso en pauta publicitaria estuvo respaldado con datos. 100% recomendados.»
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-stone-100 flex items-center gap-3">
+              <img 
+                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=150&q=80" 
+                alt="Dra. Camila Rivas" 
+                class="w-11 h-11 rounded-full object-cover border-2 border-emerald-100 shadow-sm"
+                loading="lazy"
+              />
+              <div>
+                <h4 class="font-bold text-xs text-[#1b382b]">Dra. Camila Rivas</h4>
+                <span class="text-[11px] text-stone-500 block">Directora en "Clínica Dental Sonrisas"</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         9. HORARIO DE ATENCIÓN AL CLIENTE (Requirement 4)
+         ====================================================================== -->
+    <section id="horarios" class="py-20 bg-white border-t border-b border-stone-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <!-- Column Left: Horario Principal -->
+          <div class="lg:col-span-6">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#e8efe9] text-[#1b382b] text-xs font-bold tracking-wide uppercase mb-3">
+              <i data-lucide="clock" class="w-3.5 h-3.5"></i>
+              <span>Canales y Horarios</span>
+            </div>
+            
+            <h2 class="text-3xl sm:text-4xl font-serif font-bold text-[#1b382b]">
+              Horario General de Atención al Cliente
+            </h2>
+
+            <p class="mt-4 text-stone-600 text-base leading-relaxed">
+              En <strong>Impulsapyme</strong> sabemos que los emprendedores no paran. Por eso mantenemos un horario comercial estructurado para asesorías en vivo y una guardia digital permanente vía WhatsApp para que nunca pierdas una oportunidad.
+            </p>
+
+            <!-- Timetable List -->
+            <div class="mt-8 space-y-3">
+              
+              <!-- Lun a Vie -->
+              <div class="p-4 rounded-2xl bg-[#FAF8F5] border border-stone-200 flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-xl bg-white shadow-sm flex items-center justify-center text-[#1b382b] font-bold text-xs">
+                    L-V
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-sm text-[#1b382b]">Lunes a Viernes</h4>
+                    <span class="text-xs text-stone-500">Atención y producción activa de campañas</span>
+                  </div>
+                </div>
+                <div class="text-right">
+                  <span class="font-bold text-sm text-[#1b382b] block">8:00 AM – 7:00 PM</span>
+                  <span class="text-[11px] text-emerald-700 font-semibold">Respuesta inmediata</span>
+                </div>
+              </div>
+
+              <!-- Sábados -->
+              <div class="p-4 rounded-2xl bg-[#FAF8F5] border border-stone-200 flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-xl bg-white shadow-sm flex items-center justify-center text-[#1b382b] font-bold text-xs">
+                    SÁB
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-sm text-[#1b382b]">Sábados</h4>
+                    <span class="text-xs text-stone-500">Asesorías, planificación y consultas</span>
+                  </div>
+                </div>
+                <div class="text-right">
+                  <span class="font-bold text-sm text-[#1b382b] block">9:00 AM – 2:00 PM</span>
+                  <span class="text-[11px] text-stone-500">Media jornada</span>
+                </div>
+              </div>
+
+              <!-- Domingos y Festivos -->
+              <div class="p-4 rounded-2xl bg-[#FAF8F5] border border-stone-200 flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-xl bg-white shadow-sm flex items-center justify-center text-stone-400 font-bold text-xs">
+                    D-F
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-sm text-stone-800">Domingos y Festivos</h4>
+                    <span class="text-xs text-stone-500">Recepción digital de requerimientos</span>
+                  </div>
+                </div>
+                <div class="text-right">
+                  <span class="font-bold text-sm text-stone-800 block">Guardia Digital</span>
+                  <span class="text-[11px] text-stone-500">WhatsApp 24/7</span>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Dynamic Live Box -->
+            <div class="mt-6 p-4 rounded-2xl bg-emerald-50 border border-emerald-200 flex items-center gap-4">
+              <div class="w-3 h-3 rounded-full bg-emerald-500 live-indicator shrink-0"></div>
+              <div>
+                <span id="live-status-text" class="font-bold text-emerald-900 text-sm block">
+                  Estado en tiempo real
+                </span>
+                <span id="live-status-detail" class="text-xs text-emerald-800 block">
+                  Verificando horario actual del sistema...
+                </span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Column Right: Contact Cards & Naomi Restrepo Info -->
+          <div class="lg:col-span-6">
+            <div class="bg-[#FAF8F5] p-8 rounded-3xl border border-stone-200 shadow-sm">
+              
+              <div class="flex items-center gap-4 pb-6 border-b border-stone-200">
+                <div class="w-16 h-16 rounded-full overflow-hidden border-2 border-[#1b382b] bg-white p-1 shrink-0">
+                  <img src="assets/logo/logo.png" alt="Impulsapyme Logo" class="w-full h-full object-contain">
+                </div>
+                <div>
+                  <h3 class="font-serif text-xl font-bold text-[#1b382b]">Atención Personalizada</h3>
+                  <p class="text-xs text-stone-600 mt-0.5">
+                    Dirigido por <strong>Naomi Restrepo Álvarez</strong>
+                  </p>
+                  <span class="inline-block mt-1 text-[11px] font-semibold text-emerald-800 bg-emerald-100 px-2.5 py-0.5 rounded-full">
+                    Consultora de Publicidad & Medios Digitales
+                  </span>
+                </div>
+              </div>
+
+              <div class="mt-6 space-y-4">
+                
+                <!-- Card WhatsApp -->
+                <a href="https://wa.me/57312458911" target="_blank" class="p-4 rounded-2xl bg-white border border-stone-200 hover:border-emerald-500 hover:shadow-md transition-all flex items-center justify-between group">
+                  <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0">
+                      <i data-lucide="message-circle" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                      <span class="text-xs text-stone-500 block">WhatsApp / Celular Directo</span>
+                      <span class="font-bold text-stone-900 group-hover:text-emerald-700 transition-colors">
+                        312 458 911
+                      </span>
+                    </div>
+                  </div>
+                  <span class="text-xs font-semibold text-emerald-700 flex items-center gap-1">
+                    Chatear <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                  </span>
+                </a>
+
+                <!-- Card Instagram -->
+                <a href="https://instagram.com/Impulsapyme-N" target="_blank" class="p-4 rounded-2xl bg-white border border-stone-200 hover:border-pink-500 hover:shadow-md transition-all flex items-center justify-between group">
+                  <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 rounded-xl bg-pink-100 text-pink-700 flex items-center justify-center shrink-0">
+                      <i data-lucide="instagram" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                      <span class="text-xs text-stone-500 block">Instagram Oficial</span>
+                      <span class="font-bold text-stone-900 group-hover:text-pink-700 transition-colors">
+                        @Impulsapyme-N
+                      </span>
+                    </div>
+                  </div>
+                  <span class="text-xs font-semibold text-pink-700 flex items-center gap-1">
+                    Seguir <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                  </span>
+                </a>
+
+                <!-- Card Email -->
+                <a href="mailto:naomirestrepoalvrez@gmail.com" class="p-4 rounded-2xl bg-white border border-stone-200 hover:border-blue-500 hover:shadow-md transition-all flex items-center justify-between group">
+                  <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center shrink-0">
+                      <i data-lucide="mail" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                      <span class="text-xs text-stone-500 block">Correo Electrónico</span>
+                      <span class="font-bold text-stone-900 text-sm group-hover:text-blue-700 transition-colors break-all">
+                        naomirestrepoalvrez@gmail.com
+                      </span>
+                    </div>
+                  </div>
+                  <span class="text-xs font-semibold text-blue-700 flex items-center gap-1 shrink-0 ml-2">
+                    Escribir <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                  </span>
+                </a>
+
+              </div>
+
+              <!-- Commitment Box -->
+              <div class="mt-6 text-center text-xs text-stone-500 bg-stone-100 p-3 rounded-xl">
+                ⚡ <strong>Garantía de respuesta rápida:</strong> Contestamos tus dudas en menos de 15 minutos durante horario de oficina.
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         10. PREGUNTAS FRECUENTES (FAQ)
+         ====================================================================== -->
+    <section class="py-20 bg-[#FAF8F5]">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center mb-14">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#e8efe9] text-[#1b382b] text-xs font-bold tracking-wide uppercase mb-3">
+            <i data-lucide="help-circle" class="w-3.5 h-3.5"></i>
+            <span>Dudas Resueltas</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-serif font-bold text-[#1b382b]">
+            Preguntas Frecuentes
+          </h2>
+          <p class="mt-2 text-stone-600 text-sm">
+            Todo lo que necesitas saber antes de comenzar a trabajar con nosotros.
+          </p>
+        </div>
+
+        <div class="space-y-4">
+          
+          <!-- FAQ 1 -->
+          <div class="faq-item bg-white rounded-2xl border border-stone-200 overflow-hidden shadow-sm">
+            <button class="faq-header w-full p-6 text-left flex items-center justify-between gap-4 font-bold text-[#1b382b] text-base hover:text-emerald-800 transition-colors">
+              <span>¿Para qué sirve contratar a Impulsapyme si yo mismo puedo publicar en Instagram?</span>
+              <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-stone-400 shrink-0 transition-transform"></i>
+            </button>
+            <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-6">
+              <p class="text-xs sm:text-sm text-stone-600 pb-6 leading-relaxed">
+                Publicar contenido por tu cuenta consume horas de trabajo que deberías estar dedicando a cerrar ventas o mejorar tu producto. Además, nosotros aplicamos <strong>estrategia de segmentación, diseño gráfico publicitario y copywriting persuasivo</strong> para que tus publicaciones no se queden en simples likes, sino que se transformen en mensajes de clientes listos para comprar.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="faq-item bg-white rounded-2xl border border-stone-200 overflow-hidden shadow-sm">
+            <button class="faq-header w-full p-6 text-left flex items-center justify-between gap-4 font-bold text-[#1b382b] text-base hover:text-emerald-800 transition-colors">
+              <span>¿Qué incluye el plan de entrada de $20.00 USD?</span>
+              <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-stone-400 shrink-0 transition-transform"></i>
+            </button>
+            <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-6">
+              <p class="text-xs sm:text-sm text-stone-600 pb-6 leading-relaxed">
+                El plan express de $20.00 está pensado para que pruebes la calidad de nuestro trabajo sin ataduras. Incluye 1 a 2 piezas publicitarias de alta calidad en formatos para Feed y Stories, con redacción de textos comerciales y entrega lista para publicar en 48 horas.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="faq-item bg-white rounded-2xl border border-stone-200 overflow-hidden shadow-sm">
+            <button class="faq-header w-full p-6 text-left flex items-center justify-between gap-4 font-bold text-[#1b382b] text-base hover:text-emerald-800 transition-colors">
+              <span>¿Cómo entregan los informes de resultados del Paso 5?</span>
+              <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-stone-400 shrink-0 transition-transform"></i>
+            </button>
+            <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-6">
+              <p class="text-xs sm:text-sm text-stone-600 pb-6 leading-relaxed">
+                Al finalizar cada mes o campaña, te entregamos un reporte claro y comprensible: cuántas personas vieron tus anuncios (alcance e impresiones), cuántas personas interactuaron, el número de prospectos atraídos y el retorno generado. Te explicamos los datos de forma práctica, sin tecnicismos confusos.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="faq-item bg-white rounded-2xl border border-stone-200 overflow-hidden shadow-sm">
+            <button class="faq-header w-full p-6 text-left flex items-center justify-between gap-4 font-bold text-[#1b382b] text-base hover:text-emerald-800 transition-colors">
+              <span>¿Atienden fuera del horario comercial?</span>
+              <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-stone-400 shrink-0 transition-transform"></i>
+            </button>
+            <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-6">
+              <p class="text-xs sm:text-sm text-stone-600 pb-6 leading-relaxed">
+                Nuestro canal de WhatsApp está habilitado 24/7 para recibir tus dudas o proyectos. Si nos escribes fuera de nuestro horario oficial (Lun-Vie 8am-7pm, Sáb 9am-2pm), tu mensaje queda registrado con máxima prioridad y te responderemos a primera hora del siguiente día hábil.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         11. FORMULARIO DE CONTACTO Y CONVERSIÓN
+         ====================================================================== -->
+    <section id="contacto" class="py-20 bg-white">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="bg-[#FAF8F5] rounded-3xl p-6 sm:p-12 border border-stone-200 shadow-lg">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+            
+            <!-- Left Info -->
+            <div class="lg:col-span-5 flex flex-col justify-between">
+              <div>
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#e8efe9] text-[#1b382b] text-xs font-bold tracking-wide uppercase mb-3">
+                  <i data-lucide="send" class="w-3.5 h-3.5"></i>
+                  <span>Hablemos de tu Marca</span>
+                </div>
+                
+                <h3 class="font-serif text-3xl font-bold text-[#1b382b] leading-tight">
+                  Da el primer paso para impulsar tu negocio hoy
+                </h3>
+
+                <p class="mt-4 text-xs sm:text-sm text-stone-600 leading-relaxed">
+                  Cuéntanos qué vendes y cuáles son tus metas. Te responderemos con una propuesta personalizada y sin ningún compromiso.
+                </p>
+
+                <div class="mt-6 space-y-3 text-xs text-stone-700">
+                  <div class="flex items-center gap-3">
+                    <i data-lucide="check-circle" class="w-4 h-4 text-emerald-700 shrink-0"></i>
+                    <span>Diagnóstico de marca sin costo.</span>
+                  </div>
+                  <div class="flex items-center gap-3">
+                    <i data-lucide="check-circle" class="w-4 h-4 text-emerald-700 shrink-0"></i>
+                    <span>Planes flexibles desde $20.00 hasta $40,000.</span>
+                  </div>
+                  <div class="flex items-center gap-3">
+                    <i data-lucide="check-circle" class="w-4 h-4 text-emerald-700 shrink-0"></i>
+                    <span>Atención directa de Naomi Restrepo Álvarez.</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Direct WhatsApp button -->
+              <div class="mt-8 pt-6 border-t border-stone-200">
+                <span class="text-xs text-stone-500 block mb-2">¿Prefieres atención inmediata?</span>
+                <button id="send-whatsapp-direct" class="w-full py-3 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 shadow transition-all">
+                  <i data-lucide="message-circle" class="w-4 h-4"></i>
+                  <span>Escribir directo a WhatsApp</span>
+                </button>
+              </div>
+
+            </div>
+
+            <!-- Right Form -->
+            <div class="lg:col-span-7 bg-white p-6 sm:p-8 rounded-2xl border border-stone-200 shadow-sm">
+              <form id="contact-form" class="space-y-4">
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label for="contact-name" class="block text-xs font-bold text-stone-700 mb-1">Tu Nombre *</label>
+                    <input 
+                      type="text" 
+                      id="contact-name" 
+                      required 
+                      placeholder="Ej. Carlos Mendoza" 
+                      class="w-full px-3.5 py-2.5 rounded-xl border border-stone-300 text-xs text-stone-800 focus:outline-none focus:border-[#1b382b] focus:ring-1 focus:ring-[#1b382b]"
+                    />
+                  </div>
+
+                  <div>
+                    <label for="contact-company" class="block text-xs font-bold text-stone-700 mb-1">Nombre de tu PyME o Emprendimiento</label>
+                    <input 
+                      type="text" 
+                      id="contact-company" 
+                      placeholder="Ej. Café Delicia" 
+                      class="w-full px-3.5 py-2.5 rounded-xl border border-stone-300 text-xs text-stone-800 focus:outline-none focus:border-[#1b382b] focus:ring-1 focus:ring-[#1b382b]"
+                    />
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label for="contact-phone" class="block text-xs font-bold text-stone-700 mb-1">WhatsApp / Teléfono *</label>
+                    <input 
+                      type="tel" 
+                      id="contact-phone" 
+                      required 
+                      placeholder="Ej. +57 312 000 0000" 
+                      class="w-full px-3.5 py-2.5 rounded-xl border border-stone-300 text-xs text-stone-800 focus:outline-none focus:border-[#1b382b] focus:ring-1 focus:ring-[#1b382b]"
+                    />
+                  </div>
+
+                  <div>
+                    <label for="contact-service" class="block text-xs font-bold text-stone-700 mb-1">Servicio de Interés</label>
+                    <select 
+                      id="contact-service" 
+                      class="w-full px-3.5 py-2.5 rounded-xl border border-stone-300 text-xs text-stone-800 focus:outline-none focus:border-[#1b382b] focus:ring-1 focus:ring-[#1b382b]"
+                    >
+                      <option value="Plan Impulso PyME ($75)">Plan Impulso PyME ($75 USD)</option>
+                      <option value="Plan Pieza Express ($20)">Plan Pieza Express ($20 USD)</option>
+                      <option value="Plan Crecimiento & Ads ($220)">Plan Crecimiento & Ads ($220 USD)</option>
+                      <option value="Plan Corporativo 360° (Hasta $40k)">Plan Corporativo 360° (Hasta $40,000 USD)</option>
+                      <option value="Diseño de Piezas Publicitarias">Diseño de Piezas Publicitarias</option>
+                      <option value="Gestión de Redes Sociales">Gestión de Redes Sociales</option>
+                      <option value="Creación de Página Web">Creación de Página Web</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div>
+                  <label for="contact-budget" class="block text-xs font-bold text-stone-700 mb-1">Presupuesto Estimado</label>
+                  <select 
+                    id="contact-budget" 
+                    class="w-full px-3.5 py-2.5 rounded-xl border border-stone-300 text-xs text-stone-800 focus:outline-none focus:border-[#1b382b] focus:ring-1 focus:ring-[#1b382b]"
+                  >
+                    <option value="$20 - $50 USD">$20.00 – $50 USD (Piezas puntuales)</option>
+                    <option value="$50 - $150 USD">$50 – $150 USD (Gestión básica mensual)</option>
+                    <option value="$150 - $500 USD">$150 – $500 USD (Crecimiento & Pauta Ads)</option>
+                    <option value="$500 - $2,000 USD">$500 – $2,000 USD (Estrategia Pro)</option>
+                    <option value="$2,000 - $40,000 USD">$2,000 – $40,000 USD (Corporativo Masivo)</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label for="contact-message" class="block text-xs font-bold text-stone-700 mb-1">¿Qué necesitas impulsar en tu negocio? *</label>
+                  <textarea 
+                    id="contact-message" 
+                    rows="3" 
+                    required 
+                    placeholder="Cuéntanos brevemente sobre tus productos, tus clientes actuales o lo que buscas mejorar..."
+                    class="w-full px-3.5 py-2.5 rounded-xl border border-stone-300 text-xs text-stone-800 focus:outline-none focus:border-[#1b382b] focus:ring-1 focus:ring-[#1b382b]"
+                  ></textarea>
+                </div>
+
+                <button 
+                  type="submit" 
+                  class="w-full py-3.5 rounded-xl bg-[#1b382b] hover:bg-[#28543f] text-white font-bold text-xs uppercase tracking-wider shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2"
+                >
+                  <i data-lucide="send" class="w-4 h-4"></i>
+                  <span>Enviar Consulta a Impulsapyme</span>
+                </button>
+
+                <div id="form-status-msg" class="hidden"></div>
+
+              </form>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======================================================================
+       12. FOOTER
+       ====================================================================== -->
+  <footer class="bg-[#12251d] text-white pt-16 pb-8 border-t border-[#1b382b]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-white/10">
+        
+        <!-- Brand Column -->
+        <div class="lg:col-span-2">
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-full overflow-hidden border border-white/20 bg-white p-0.5">
+              <img src="assets/logo/logo.png" alt="Impulsapyme Logo" class="w-full h-full object-contain">
+            </div>
+            <div>
+              <span class="font-serif text-2xl font-bold tracking-tight text-white block">
+                IMPULSAPYME
+              </span>
+              <span class="text-xs text-stone-400 font-medium block">
+                Publicidad & Gestión de Redes Sociales
+              </span>
+            </div>
+          </div>
+
+          <p class="mt-4 text-xs text-stone-400 leading-relaxed max-w-sm">
+            Estrategias de marketing que hacen crecer lo que tanto te ha costado construir. Acompañamos a micro, pequeñas y medianas empresas a posicionarse y vender más en internet.
+          </p>
+
+          <div class="mt-6 font-handwritten text-xl text-emerald-300">
+            Juntos lo hacemos posible ♡
+          </div>
+        </div>
+
+        <!-- Links Rápidos -->
+        <div>
+          <h4 class="font-bold text-xs uppercase tracking-wider text-emerald-400 mb-4">Navegación</h4>
+          <ul class="space-y-2 text-xs text-stone-300">
+            <li><a href="#que-es-agencia" class="hover:text-white transition-colors">¿Para qué una Agencia?</a></li>
+            <li><a href="#metodologia" class="hover:text-white transition-colors">Metodología en 5 Pasos</a></li>
+            <li><a href="#galeria" class="hover:text-white transition-colors">Piezas Publicitarias</a></li>
+            <li><a href="#planes" class="hover:text-white transition-colors">Planes y Precios ($20-$40k)</a></li>
+            <li><a href="#cotizador" class="hover:text-white transition-colors">Calculadora Dinámica</a></li>
+            <li><a href="#horarios" class="hover:text-white transition-colors">Horarios de Atención</a></li>
+          </ul>
+        </div>
+
+        <!-- Horarios Resumen -->
+        <div>
+          <h4 class="font-bold text-xs uppercase tracking-wider text-emerald-400 mb-4">Horario de Oficina</h4>
+          <ul class="space-y-2 text-xs text-stone-300">
+            <li>
+              <span class="block text-white font-semibold">Lunes a Viernes:</span>
+              <span class="text-stone-400">8:00 AM – 7:00 PM</span>
+            </li>
+            <li>
+              <span class="block text-white font-semibold">Sábados:</span>
+              <span class="text-stone-400">9:00 AM – 2:00 PM</span>
+            </li>
+            <li>
+              <span class="block text-white font-semibold">Domingos y Festivos:</span>
+              <span class="text-stone-400">Guardia Digital WhatsApp 24/7</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Contacto Directo -->
+        <div>
+          <h4 class="font-bold text-xs uppercase tracking-wider text-emerald-400 mb-4">Contacto Directo</h4>
+          <ul class="space-y-3 text-xs text-stone-300">
+            <li class="flex items-center gap-2">
+              <i data-lucide="phone" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+              <a href="https://wa.me/57312458911" class="hover:text-white transition-colors">312 458 911</a>
+            </li>
+            <li class="flex items-center gap-2">
+              <i data-lucide="instagram" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+              <a href="https://instagram.com/Impulsapyme-N" target="_blank" class="hover:text-white transition-colors">@Impulsapyme-N</a>
+            </li>
+            <li class="flex items-start gap-2">
+              <i data-lucide="mail" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
+              <a href="mailto:naomirestrepoalvrez@gmail.com" class="hover:text-white transition-colors break-all">naomirestrepoalvrez@gmail.com</a>
+            </li>
+            <li class="pt-2 text-[11px] text-stone-400">
+              Directora: <strong>Naomi Restrepo Álvarez</strong>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Copyright Bottom Bar -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-stone-400 gap-4">
+        <div>
+          © 2026 Impulsapyme. Todos los derechos reservados.
+        </div>
+        <div class="flex items-center gap-4 text-[11px]">
+          <span>Publicidad, Estrategia & Gestión de Redes Sociales</span>
+          <span>•</span>
+          <a href="#contacto" class="hover:text-white transition-colors">Cotizar Proyecto</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ======================================================================
+       13. MODAL LIGHTBOX INTERACTIVO PARA PIEZAS PUBLICITARIAS
+       ====================================================================== -->
+  <div id="lightbox-modal" class="lightbox-modal fixed inset-0 z-50 bg-stone-950/90 backdrop-blur-md flex items-center justify-center p-4 sm:p-6" role="dialog" aria-modal="true">
+    
+    <!-- Close button -->
+    <button id="lightbox-close" class="absolute top-4 right-4 z-50 p-2.5 rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors" aria-label="Cerrar vista previa">
+      <i data-lucide="x" class="w-6 h-6"></i>
+    </button>
+
+    <!-- Prev button -->
+    <button id="lightbox-prev" class="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 z-50 p-3 rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors" aria-label="Pieza anterior">
+      <i data-lucide="chevron-left" class="w-6 h-6"></i>
+    </button>
+
+    <!-- Next button -->
+    <button id="lightbox-next" class="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 z-50 p-3 rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors" aria-label="Siguiente pieza">
+      <i data-lucide="chevron-right" class="w-6 h-6"></i>
+    </button>
+
+    <!-- Modal Content Window -->
+    <div class="lightbox-content max-w-4xl w-full max-h-[90vh] bg-white rounded-3xl overflow-hidden shadow-2xl flex flex-col md:flex-row">
+      
+      <!-- Image display container -->
+      <div class="md:w-1/2 bg-stone-900 flex items-center justify-center p-4 relative overflow-hidden">
+        <img id="lightbox-img" src="" alt="Pieza publicitaria" class="max-h-[60vh] md:max-h-[80vh] w-auto object-contain rounded-xl shadow-lg">
+      </div>
+
+      <!-- Details container -->
+      <div class="md:w-1/2 p-6 sm:p-8 flex flex-col justify-between overflow-y-auto max-h-[40vh] md:max-h-[80vh]">
+        <div>
+          <div class="flex items-center justify-between gap-2 mb-3">
+            <span id="lightbox-badge" class="px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider bg-emerald-100 text-emerald-900">
+              Categoría
+            </span>
+            <span id="lightbox-counter" class="text-xs text-stone-400 font-semibold">
+              1 de 7
+            </span>
+          </div>
+
+          <h3 id="lightbox-title" class="font-serif text-xl sm:text-2xl font-bold text-[#1b382b] leading-snug">
+            Título de la Pieza
+          </h3>
+
+          <div class="mt-4 space-y-4">
+            <div>
+              <h5 class="text-xs font-bold text-stone-500 uppercase tracking-wider">Descripción del Formato:</h5>
+              <p id="lightbox-desc" class="text-xs sm:text-sm text-stone-600 mt-1 leading-relaxed">
+                Descripción detallada...
+              </p>
+            </div>
+
+            <div class="p-4 rounded-2xl bg-[#FAF8F5] border border-stone-200">
+              <h5 class="text-xs font-bold text-[#1b382b] flex items-center gap-1.5 uppercase tracking-wider">
+                <i data-lucide="target" class="w-4 h-4 text-emerald-700"></i>
+                Objetivo Publicitario:
+              </h5>
+              <p id="lightbox-objective" class="text-xs text-stone-600 mt-1 leading-relaxed">
+                Objetivo comercial...
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-6 pt-6 border-t border-stone-200 flex flex-col sm:flex-row items-center gap-3">
+          <a id="lightbox-quote-btn" 
+             href="#" 
+             target="_blank" 
+             class="w-full py-3 px-4 rounded-xl bg-[#1b382b] hover:bg-[#28543f] text-white font-bold text-xs uppercase tracking-wider text-center flex items-center justify-center gap-2 shadow transition-all">
+            <i data-lucide="message-circle" class="w-4 h-4"></i>
+            <span>Quiero una pieza similar</span>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       14. BOTÓN FLOTANTE PERMANENTE DE WHATSAPP
+       ====================================================================== -->
+  <a href="https://wa.me/57312458911?text=Hola%20Impulsapyme,%20estoy%20en%20su%20sitio%20web%20y%20quiero%20m%C3%A1s%20informaci%C3%B3n." 
+     target="_blank" 
+     rel="noopener noreferrer" 
+     class="fixed bottom-6 right-6 z-40 bg-[#25D366] hover:bg-[#20ba59] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform flex items-center gap-2 group"
+     aria-label="Contactar por WhatsApp">
+    <i data-lucide="message-circle" class="w-6 h-6 fill-current"></i>
+    <span class="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-300 ease-in-out font-bold text-xs text-white">
+      Chatear con Impulsapyme
+    </span>
+  </a>
+
+  <!-- Initialize Lucide Icons -->
+  <script>
+    lucide.createIcons();
+  </script>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
+</html>
